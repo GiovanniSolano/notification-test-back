@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ActivityLogController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\NotificationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Authentication
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::group(['prefix' => 'v1'], function() {
+
+    // Categories
+
+    // resource but only - get all
+    Route::resource('categories', CategoryController::class)->only('index');
+    Route::resource('activity-logs', ActivityLogController::class)->only('index');
+    Route::post('notifications/send', [NotificationController::class, 'sendNotification']);
+
+});
+

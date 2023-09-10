@@ -34,7 +34,7 @@ class CategoryController extends Controller
 
         } catch (Exception $e) {
 
-            $msg = $e->getMessage() ?? __("messages.something_went_wrong");
+            $msg = $e->getMessage() ?? __("Something Went Wrong");
 
             return $this->commonUtl->errorResponse($msg, 500);
 

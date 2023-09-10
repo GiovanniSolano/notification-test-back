@@ -3,6 +3,15 @@
 
 Giovanni Solano Segura
 
+## DOCUMENTATION POSTMAN
+https://documenter.getpostman.com/view/6009041/2s9YC1Xa24
+
+## URLS
+- BACKEND API: https://notification-test-8146bbc46196.herokuapp.com/api/v1/
+- FRONTEND: https://notification-test-front-a3b68a385272.herokuapp.com
+
+## DATABASE (FREE VERSION)
+https://www.elephantsql.com/
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
